@@ -2,4 +2,4 @@ fastapi==0.115.8
 pandas==2.2.3
 pydantic==2.10.6
 Requests==2.32.3
-SQLAlchemy==1.4.54 
+SQLAlchemy==1.4.54
