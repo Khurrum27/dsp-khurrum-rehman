@@ -40,7 +40,7 @@ df = fetch_past_predictions()
 if not df.empty:
     df_filtered = df.copy()
 
-    # Apply filters only if created_at column exists
+
     if "created_at" in df_filtered.columns:
         df_filtered = df_filtered[
             (df_filtered["created_at"] >= pd.to_datetime(start_date)) &

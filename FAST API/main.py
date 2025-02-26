@@ -89,12 +89,12 @@ async def get_results(db: Session = Depends(get_db)):
                     "genre": row.genre,
                     "prediction": row.prediction,
                     "source": row.source,
-                    "created_at": row.created_at  # Ensure this is returned
+                    "created_at": row.created_at 
                 }
                 for row in results
             ]
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-#
+    
+    print("Hello Worl Tatta Khurrum")   

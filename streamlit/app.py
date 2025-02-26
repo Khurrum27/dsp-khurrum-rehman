@@ -42,7 +42,7 @@ if uploaded_file is not None:
         st.write("### Filtered Data:")
         st.dataframe(filtered_df)
 
-# FastAPI URL
+
 FASTAPI_URL = "http://127.0.0.1:8000"
 
 def call_fastapi(song_data):
