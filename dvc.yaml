@@ -1,0 +1,8 @@
+stages:
+  train_model:
+    cmd: python train_model.py
+    deps:
+      - train_model.py
+      - data/train_final.parquet
+    outs:
+      - data/submission.csv
